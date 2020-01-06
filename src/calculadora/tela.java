@@ -78,7 +78,6 @@ public class tela extends javax.swing.JFrame {
         tlargura = new javax.swing.JLabel();
         largura = new javax.swing.JTextField();
         btlimpar = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
         rbtubo = new javax.swing.JRadioButton();
         tdiametroint = new javax.swing.JLabel();
         diametroint = new javax.swing.JTextField();
@@ -120,18 +119,20 @@ public class tela extends javax.swing.JFrame {
         btexcluir = new javax.swing.JButton();
         bteditar = new javax.swing.JButton();
         btlimpalista = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
 
         jCheckBoxMenuItem1.setSelected(true);
         jCheckBoxMenuItem1.setText("jCheckBoxMenuItem1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(155, 195, 201));
+        jPanel1.setBackground(new java.awt.Color(26, 35, 38));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Britannic Bold", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Calc.Imac");
+        jLabel2.setText("Calc.MP.Imac");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, 23));
 
         codigo.addActionListener(new java.awt.event.ActionListener() {
@@ -181,18 +182,22 @@ public class tela extends javax.swing.JFrame {
         jPanel1.add(qbarras, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 270, 70, 30));
 
         jLabel1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 15)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Código do item");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, -1, -1));
 
         tdimensao.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 15)); // NOI18N
+        tdimensao.setForeground(new java.awt.Color(255, 255, 255));
         tdimensao.setText("Ø Externo");
         jPanel1.add(tdimensao, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, -1, -1));
 
         tcomprimento.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 15)); // NOI18N
+        tcomprimento.setForeground(new java.awt.Color(255, 255, 255));
         tcomprimento.setText("Comprimento");
         jPanel1.add(tcomprimento, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, -1, -1));
 
         tqbarras.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 15)); // NOI18N
+        tqbarras.setForeground(new java.awt.Color(255, 255, 255));
         tqbarras.setText("Nº Barras");
         jPanel1.add(tqbarras, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, -1, 20));
 
@@ -201,7 +206,7 @@ public class tela extends javax.swing.JFrame {
                 resultadoActionPerformed(evt);
             }
         });
-        jPanel1.add(resultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 350, 90, 60));
+        jPanel1.add(resultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 350, 130, 60));
 
         jButton1.setText("Calcular");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -217,10 +222,13 @@ public class tela extends javax.swing.JFrame {
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 160, 50));
 
         tresultado.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
+        tresultado.setForeground(new java.awt.Color(255, 255, 255));
         tresultado.setText("Resultado");
         jPanel1.add(tresultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 310, 100, -1));
 
+        rbredonda.setBackground(new java.awt.Color(75, 103, 112));
         calculo.add(rbredonda);
+        rbredonda.setForeground(new java.awt.Color(255, 255, 255));
         rbredonda.setSelected(true);
         rbredonda.setText("Redondas");
         rbredonda.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -235,7 +243,9 @@ public class tela extends javax.swing.JFrame {
         });
         jPanel1.add(rbredonda, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, -1));
 
+        rbsext.setBackground(new java.awt.Color(75, 103, 112));
         calculo.add(rbsext);
+        rbsext.setForeground(new java.awt.Color(255, 255, 255));
         rbsext.setText("Sextavadas");
         rbsext.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -249,7 +259,9 @@ public class tela extends javax.swing.JFrame {
         });
         jPanel1.add(rbsext, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, -1, -1));
 
+        rbquad.setBackground(new java.awt.Color(75, 103, 112));
         calculo.add(rbquad);
+        rbquad.setForeground(new java.awt.Color(255, 255, 255));
         rbquad.setText("Quad. Ret.");
         rbquad.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -277,6 +289,7 @@ public class tela extends javax.swing.JFrame {
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, 80, 40));
 
         taltura.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 15)); // NOI18N
+        taltura.setForeground(new java.awt.Color(255, 255, 255));
         taltura.setText("Altura");
         jPanel1.add(taltura, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, -1, -1));
 
@@ -288,6 +301,7 @@ public class tela extends javax.swing.JFrame {
         jPanel1.add(altura, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 70, 30));
 
         tlargura.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 15)); // NOI18N
+        tlargura.setForeground(new java.awt.Color(255, 255, 255));
         tlargura.setText("Largura");
         jPanel1.add(tlargura, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 170, -1, 20));
 
@@ -311,12 +325,9 @@ public class tela extends javax.swing.JFrame {
         });
         jPanel1.add(btlimpar, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 370, 70, 40));
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("By AO");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 10, -1, -1));
-
+        rbtubo.setBackground(new java.awt.Color(75, 103, 112));
         calculo.add(rbtubo);
+        rbtubo.setForeground(new java.awt.Color(255, 255, 255));
         rbtubo.setText("Tubo");
         rbtubo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -331,6 +342,7 @@ public class tela extends javax.swing.JFrame {
         jPanel1.add(rbtubo, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 50, -1, -1));
 
         tdiametroint.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 15)); // NOI18N
+        tdiametroint.setForeground(new java.awt.Color(255, 255, 255));
         tdiametroint.setText("Ø Interno");
         jPanel1.add(tdiametroint, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 170, 90, 20));
 
@@ -342,6 +354,7 @@ public class tela extends javax.swing.JFrame {
         jPanel1.add(diametroint, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, 70, 30));
 
         selectbedame.add(pbedame);
+        pbedame.setForeground(new java.awt.Color(255, 255, 255));
         pbedame.setSelected(true);
         pbedame.setText(" Padrão");
         pbedame.addActionListener(new java.awt.event.ActionListener() {
@@ -352,6 +365,7 @@ public class tela extends javax.swing.JFrame {
         jPanel1.add(pbedame, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 200, -1, -1));
 
         selectbedame.add(rbbedame);
+        rbbedame.setForeground(new java.awt.Color(255, 255, 255));
         rbbedame.setText("Informar");
         rbbedame.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -368,25 +382,31 @@ public class tela extends javax.swing.JFrame {
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 170, -1, -1));
 
         kg1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        kg1.setForeground(new java.awt.Color(255, 255, 255));
         kg1.setText("Kg");
-        jPanel1.add(kg1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 400, -1, -1));
+        jPanel1.add(kg1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 400, -1, -1));
 
+        mm1.setForeground(new java.awt.Color(255, 255, 255));
         mm1.setText("mm");
         jPanel1.add(mm1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, -1, -1));
 
+        mm2.setForeground(new java.awt.Color(255, 255, 255));
         mm2.setText("mm");
         jPanel1.add(mm2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 220, -1, -1));
 
+        mm3.setForeground(new java.awt.Color(255, 255, 255));
         mm3.setText("mm");
         jPanel1.add(mm3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 290, -1, -1));
 
+        un1.setForeground(new java.awt.Color(255, 255, 255));
         un1.setText("Un");
         jPanel1.add(un1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 290, -1, -1));
 
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Versão 1.19.1408 ");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 10, -1, -1));
+        jLabel6.setText("20.01.beta");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 10, -1, -1));
 
+        medidabedame.setForeground(new java.awt.Color(255, 255, 255));
         medidabedame.setText("mm");
         jPanel1.add(medidabedame, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 290, -1, -1));
 
@@ -397,10 +417,11 @@ public class tela extends javax.swing.JFrame {
         infbedame.setText("= 3");
         jPanel1.add(infbedame, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 193, 20, 30));
 
-        jPanel2.setBackground(new java.awt.Color(202, 217, 219));
+        jPanel2.setBackground(new java.awt.Color(75, 103, 112));
         jPanel2.setLayout(null);
 
         jLabel7.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 15)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Peso Total");
         jPanel2.add(jLabel7);
         jLabel7.setBounds(10, 40, 70, 21);
@@ -421,18 +442,23 @@ public class tela extends javax.swing.JFrame {
         resultbarras.setBounds(120, 70, 60, 30);
 
         jLabel8.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 15)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Nº Total Barras");
         jPanel2.add(jLabel8);
         jLabel8.setBounds(100, 40, 104, 21);
 
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Kg");
         jPanel2.add(jLabel10);
         jLabel10.setBounds(70, 90, 40, 20);
 
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Un");
         jPanel2.add(jLabel9);
         jLabel9.setBounds(180, 90, 30, 14);
 
+        checkbarras.setBackground(new java.awt.Color(75, 103, 112));
+        checkbarras.setForeground(new java.awt.Color(255, 255, 255));
         checkbarras.setText("Calcular Número Total de Barras");
         checkbarras.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -443,11 +469,13 @@ public class tela extends javax.swing.JFrame {
         checkbarras.setBounds(10, 10, 210, 23);
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("=");
         jPanel2.add(jLabel13);
         jLabel13.setBounds(90, 70, 20, 30);
 
         jLabel11.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 15)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Medida Total");
         jPanel2.add(jLabel11);
         jLabel11.setBounds(220, 40, 100, 20);
@@ -460,13 +488,14 @@ public class tela extends javax.swing.JFrame {
         jPanel2.add(metrostotal);
         metrostotal.setBounds(220, 70, 80, 30);
 
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("mm");
         jPanel2.add(jLabel12);
         jLabel12.setBounds(300, 90, 30, 14);
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 420, 340, 110));
 
-        jPanel3.setBackground(new java.awt.Color(202, 217, 219));
+        jPanel3.setBackground(new java.awt.Color(75, 103, 112));
         jPanel3.setLayout(null);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -484,6 +513,7 @@ public class tela extends javax.swing.JFrame {
         jPanel4.setBounds(-10, -40, 350, 40);
 
         jLabel4.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 15)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Número do Lote");
         jPanel3.add(jLabel4);
         jLabel4.setBounds(170, 50, 112, 21);
@@ -498,11 +528,12 @@ public class tela extends javax.swing.JFrame {
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 340, 120));
 
-        jPanel5.setBackground(new java.awt.Color(202, 217, 219));
+        jPanel5.setBackground(new java.awt.Color(75, 103, 112));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel14.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 15)); // NOI18N
-        jLabel14.setText("Resultados");
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel14.setText("RESULTADOS");
         jPanel5.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
         listaCalculo.setColumns(20);
@@ -512,6 +543,7 @@ public class tela extends javax.swing.JFrame {
         jPanel5.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 240, 320));
 
         jLabel15.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 15)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Informe a Sequência Para Excluir");
         jPanel5.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, -1, -1));
 
@@ -541,7 +573,7 @@ public class tela extends javax.swing.JFrame {
                 bteditarActionPerformed(evt);
             }
         });
-        jPanel5.add(bteditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 450, 70, 30));
+        jPanel5.add(bteditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 450, 80, 30));
 
         btlimpalista.setText("Limpar");
         btlimpalista.addActionListener(new java.awt.event.ActionListener() {
@@ -549,7 +581,19 @@ public class tela extends javax.swing.JFrame {
                 btlimpalistaActionPerformed(evt);
             }
         });
-        jPanel5.add(btlimpalista, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 450, -1, 30));
+        jPanel5.add(btlimpalista, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 410, 70, 30));
+
+        jButton3.setText("Exportar");
+        jPanel5.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 410, 80, 30));
+
+        jButton4.setBackground(new java.awt.Color(255, 102, 102));
+        jButton4.setText("Exit");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 450, 70, 30));
 
         jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 40, 270, 490));
 
@@ -680,6 +724,10 @@ public class tela extends javax.swing.JFrame {
                 r = codigo.getText() + " = " + String.valueOf(f.format(vresultado));
                 resultado.setText(" " + String.valueOf(f.format(vresultado)));
 
+                obj.salvar(r);
+                resultado.requestFocus();
+                listaCalculo.setText(obj.Lista());
+
             }
 
             /* 2º Select Sextavadas*/
@@ -697,8 +745,12 @@ public class tela extends javax.swing.JFrame {
                 vresultado = ((((vdimensao * vdimensao) * 0.0068) * (vcomprimento + vbedame) / 1000) * vqbarras);
 
                 resultado.setVisible(true);
-                r = codigo.getText() + "" + String.valueOf(f.format(vresultado));
+                r = codigo.getText() + " = " + String.valueOf(f.format(vresultado));
                 resultado.setText(String.valueOf(f.format(vresultado)));
+
+                obj.salvar(r);
+                resultado.requestFocus();
+                listaCalculo.setText(obj.Lista());
             }
 
             /* 3º Select Quadradas e Retangulares*/
@@ -717,8 +769,11 @@ public class tela extends javax.swing.JFrame {
                 vresultado = ((((valtura * vlargura) * 0.00785) * (vcomprimento + vbedame) / 1000) * vqbarras);
 
                 resultado.setVisible(true);
-                r = codigo.getText() + "" + String.valueOf(f.format(vresultado));
+                r = codigo.getText() + " = " + String.valueOf(f.format(vresultado));
                 resultado.setText(String.valueOf(f.format(vresultado)));
+                obj.salvar(r);
+                resultado.requestFocus();
+                listaCalculo.setText(obj.Lista());
             }
 
             /* 4º Select Tubo*/
@@ -739,8 +794,12 @@ public class tela extends javax.swing.JFrame {
                 vresultado = ((vcalc2 - vcalc1) * vqbarras);
 
                 resultado.setVisible(true);
-                r = codigo.getText() + String.valueOf(f.format(vresultado));
+                r = codigo.getText() + " = " + String.valueOf(f.format(vresultado));
                 resultado.setText(String.valueOf(f.format(vresultado)));
+
+                obj.salvar(r);
+                resultado.requestFocus();
+                listaCalculo.setText(obj.Lista());
 
             }
         }
@@ -765,10 +824,6 @@ public class tela extends javax.swing.JFrame {
             }
         }
 
-        obj.salvar(r);
-        resultado.requestFocus();
-        listaCalculo.setText(obj.Lista());
-
     }
 
     private void btExcluirActionPerformed(java.awt.event.ActionEvent evt) {
@@ -780,7 +835,7 @@ public class tela extends javax.swing.JFrame {
         }
 
     }
-    
+
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         executar();
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -905,48 +960,48 @@ public class tela extends javax.swing.JFrame {
     }//GEN-LAST:event_metrostotalActionPerformed
 
     private void btexcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btexcluirActionPerformed
-        if(!infseq.getText().equals("")){
-        obj.excluir(Integer.parseInt(infseq.getText()));
-    }else{
-            JOptionPane.showMessageDialog(null,"Insira uma Sequência para excluír");
-            }
+        if (!infseq.getText().equals("")) {
+            obj.excluir(Integer.parseInt(infseq.getText()));
+        } else {
+            JOptionPane.showMessageDialog(null, "Insira uma Sequência para excluír");
+        }
         listaCalculo.setText(obj.Lista());
     }//GEN-LAST:event_btexcluirActionPerformed
 
     private void infseqActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_infseqActionPerformed
-     
+
     }//GEN-LAST:event_infseqActionPerformed
 
     private void infseqKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_infseqKeyReleased
-    infseq.setText(infseq.getText().replaceAll("[^0-9]", ""));
+
     }//GEN-LAST:event_infseqKeyReleased
 
     private void comprimentoKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_comprimentoKeyReleased
-    comprimento.setText(comprimento.getText().replaceAll("[^0-9]", ""));
+
     }//GEN-LAST:event_comprimentoKeyReleased
 
     private void qbarrasKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_qbarrasKeyReleased
-    qbarras.setText(qbarras.getText().replaceAll("[^0-9]", ""));
+
     }//GEN-LAST:event_qbarrasKeyReleased
 
     private void dimensaoKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_dimensaoKeyReleased
-    dimensao.setText(dimensao.getText().replaceAll("[^0-9]", ""));
+
     }//GEN-LAST:event_dimensaoKeyReleased
 
     private void alturaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_alturaKeyReleased
-    altura.setText(altura.getText().replaceAll("[^0-9]", ""));
+
     }//GEN-LAST:event_alturaKeyReleased
 
     private void larguraKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_larguraKeyReleased
-    largura.setText(largura.getText().replaceAll("[^0-9]", ""));
+
     }//GEN-LAST:event_larguraKeyReleased
 
     private void diametrointKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_diametrointKeyReleased
-    diametroint.setText(diametroint.getText().replaceAll("[^0-9]", ""));
+
     }//GEN-LAST:event_diametrointKeyReleased
 
     private void loteKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_loteKeyReleased
-    lote.setText(lote.getText().replaceAll("[^0-9]", ""));
+
     }//GEN-LAST:event_loteKeyReleased
 
     private void bteditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bteditarActionPerformed
@@ -957,18 +1012,21 @@ public class tela extends javax.swing.JFrame {
         }
         listaCalculo.setText(obj.Lista());
 
-    
-                                        
+
     }//GEN-LAST:event_bteditarActionPerformed
 
     private void btlimpalistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btlimpalistaActionPerformed
-    obj.limpar();
-    listaCalculo.setText(obj.Lista());
+        obj.limpar();
+        listaCalculo.setText(obj.Lista());
     }//GEN-LAST:event_btlimpalistaActionPerformed
 
     private void comprimentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprimentoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_comprimentoActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        dispose();
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1029,6 +1087,8 @@ public class tela extends javax.swing.JFrame {
     private javax.swing.JTextField infseq;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -1038,7 +1098,6 @@ public class tela extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
